@@ -1,0 +1,30 @@
+{
+  "navigation": {
+    "about": "About",
+    "technology": "Technology",
+    "solutions": "Solutions",
+    "resources": "Resources"
+  },
+  "footer": {
+    "tagline": "High-performance compute acceleration via geometric canonicalization. O(1) constant-time operations built on Monster group mathematics.",
+    "navigationTitle": "Navigation",
+    "home": "Home",
+    "connectTitle": "Connect",
+    "github": "GitHub",
+    "discord": "Discord",
+    "legalTitle": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "openSource": "Open-Source Mandate",
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Stay updated with the latest from UOR Foundation",
+      "placeholder": "Enter your email",
+      "subscribe": "Subscribe",
+      "subscribing": "Subscribing...",
+      "success": "Subscribed successfully!",
+      "error": "Failed to subscribe. Please try again."
+    },
+    "copyright": "© {{year}} UOR Foundation. All rights reserved."
+  }
+}

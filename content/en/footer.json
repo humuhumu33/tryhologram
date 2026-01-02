@@ -1,0 +1,37 @@
+{
+  "social": [
+    {
+      "label": "GitHub",
+      "href": "https://github.com/UOR-Foundation",
+      "external": true
+    },
+    {
+      "label": "Discord",
+      "href": "https://discord.gg/uor",
+      "external": true
+    }
+  ],
+  "sections": [
+    {
+      "title": "Navigation",
+      "links": [
+        { "label": "How", "href": "/how" },
+        { "label": "Team", "href": "/team" },
+        { "label": "Community", "href": "/community" },
+        { "label": "Blog", "href": "/blog" }
+      ]
+    },
+    {
+      "title": "Legal",
+      "links": [
+        { "label": "Privacy Policy", "href": "/privacy" },
+        { "label": "Terms of Service", "href": "/terms" },
+        { "label": "Open-Source Mandate", "href": "/open-source" }
+      ]
+    },
+    {
+      "title": "Organization",
+      "links": [{ "label": "UOR Foundation", "href": "https://uor.foundation", "external": true }]
+    }
+  ]
+}
