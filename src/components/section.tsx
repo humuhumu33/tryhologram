@@ -1,7 +1,6 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { MathJax } from "better-react-mathjax";
 
 interface SectionProps {
   children: React.ReactNode;
@@ -35,7 +34,7 @@ export function SectionHeader({
       </h2>
       {description && (
         <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-          <MathJax>{description}</MathJax>
+          {description}
         </p>
       )}
     </div>

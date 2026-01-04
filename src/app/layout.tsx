@@ -44,17 +44,15 @@ export default function RootLayout({
             forcedTheme="dark"
             disableTransitionOnChange
           >
-            <MathJaxProvider>
-              <Navigation />
-              <main className="relative z-10 min-h-screen">{children}</main>
-              <footer className="relative z-10 border-t border-border/10 bg-transparent">
-                <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-                  <p className="text-xs leading-5 text-muted-foreground text-center">
-                    © 2026 Hologram Technologies. All rights reserved.
-                  </p>
-                </div>
-              </footer>
-            </MathJaxProvider>
+            <Navigation />
+            <main className="relative z-10 min-h-screen">{children}</main>
+            <footer className="relative z-10 border-t border-border/10 bg-transparent">
+              <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+                <p className="text-xs leading-5 text-muted-foreground text-center">
+                  © 2026 Hologram Technologies. All rights reserved.
+                </p>
+              </div>
+            </footer>
           </ThemeProvider>
         </I18nProvider>
       </body>

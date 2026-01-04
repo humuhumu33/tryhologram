@@ -92,20 +92,20 @@ export function CanonicalizationOptimizationViz() {
             {/* Optimized operations - fused and in a row, centered */}
             <g transform="translate(500, 335)">
               {/* Fused operation 1 */}
-              <rect x="-250" y="-30" width="150" height="60" rx="2" fill="#111827" stroke="#10b981" strokeWidth="2.5" />
-              <text x="-175" y="0" textAnchor="middle" dominantBaseline="middle" fill="#10b981" fontSize="16" fontFamily="monospace" fontWeight="600">tanh+relu+sigmoid</text>
+              <rect x="-290" y="-30" width="200" height="60" rx="2" fill="#111827" stroke="#10b981" strokeWidth="2.5" />
+              <text x="-190" y="0" textAnchor="middle" dominantBaseline="middle" fill="#10b981" fontSize="16" fontFamily="monospace" fontWeight="600">tanh + relu + sigmoid</text>
               
-              <line x1="-95" y1="0" x2="-70" y2="0" stroke="#10b981" strokeWidth="2.5" opacity="0.6" />
+              <line x1="-85" y1="0" x2="-60" y2="0" stroke="#10b981" strokeWidth="2.5" opacity="0.6" />
               
               {/* Fused operation 2 */}
-              <rect x="-55" y="-30" width="130" height="60" rx="2" fill="#111827" stroke="#10b981" strokeWidth="2.5" />
-              <text x="10" y="0" textAnchor="middle" dominantBaseline="middle" fill="#10b981" fontSize="16" fontFamily="monospace" fontWeight="600">norm+scale</text>
+              <rect x="-50" y="-30" width="160" height="60" rx="2" fill="#111827" stroke="#10b981" strokeWidth="2.5" />
+              <text x="30" y="0" textAnchor="middle" dominantBaseline="middle" fill="#10b981" fontSize="16" fontFamily="monospace" fontWeight="600">norm + scale</text>
               
-              <line x1="80" y1="0" x2="105" y2="0" stroke="#10b981" strokeWidth="2.5" opacity="0.6" />
+              <line x1="115" y1="0" x2="140" y2="0" stroke="#10b981" strokeWidth="2.5" opacity="0.6" />
               
               {/* Fused operation 3 */}
-              <rect x="110" y="-30" width="150" height="60" rx="2" fill="#111827" stroke="#10b981" strokeWidth="2.5" />
-              <text x="185" y="0" textAnchor="middle" dominantBaseline="middle" fill="#10b981" fontSize="16" fontFamily="monospace" fontWeight="600">add+mul+relu</text>
+              <rect x="145" y="-30" width="200" height="60" rx="2" fill="#111827" stroke="#10b981" strokeWidth="2.5" />
+              <text x="245" y="0" textAnchor="middle" dominantBaseline="middle" fill="#10b981" fontSize="16" fontFamily="monospace" fontWeight="600">add + mul + relu</text>
             </g>
             
             {/* (fused) label - centered below operations, aligned with top graphic */}
@@ -126,6 +126,11 @@ export function CanonicalizationOptimizationViz() {
     </div>
   );
 }
+
+
+
+
+
 
 
 

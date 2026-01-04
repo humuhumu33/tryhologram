@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
 
 const navItems = [
+  { href: "/team", key: "about", label: "About" },
   { href: "/technology", key: "technology", label: "Technology" },
   { href: "/solutions", key: "solutions", label: "Products" },
   { href: "/resources", key: "resources", label: "Resources" },
@@ -326,6 +327,14 @@ export function Navigation() {
                         <div className="block px-4 py-2 text-base font-medium text-muted-foreground/60 cursor-not-allowed">
                           Docs <span className="text-xs">(Coming Soon)</span>
                         </div>
+                        <a
+                          href="https://discord.gg/ZwuZaNyuve"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block px-4 py-2 text-base font-medium text-muted-foreground hover:text-foreground hover:bg-white/5 transition-all duration-200"
+                        >
+                          Community (UOR)
+                        </a>
                         <Link
                           href="/contact"
                           className="block px-4 py-2 text-base font-medium text-muted-foreground hover:text-foreground hover:bg-white/5 transition-all duration-200"
@@ -447,17 +456,11 @@ export function Navigation() {
                   className={cn(
                     "relative text-lg font-semibold transition-all duration-200 px-1 py-2",
                     isActive
-                      ? "text-foreground"
+                      ? "text-white"
                       : "text-muted-foreground hover:text-foreground"
                   )}
                 >
                   {item.label}
-                  {isActive && (
-                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-cyan via-purple to-cyan rounded-full" />
-                  )}
-                  {!isActive && (
-                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-cyan/0 hover:bg-cyan/50 rounded-full transition-all duration-200 scale-x-0 hover:scale-x-100 origin-center" />
-                  )}
                 </Link>
               );
             })}
@@ -530,6 +533,15 @@ export function Navigation() {
                     <div className="block rounded-lg px-4 py-3 min-h-[44px] flex items-center text-base font-medium text-muted-foreground/60">
                       Docs <span className="text-xs ml-1">(Coming Soon)</span>
                     </div>
+                    <a
+                      href="https://discord.gg/ZwuZaNyuve"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block rounded-lg px-4 py-3 min-h-[44px] flex items-center text-base font-medium text-muted-foreground hover:text-foreground hover:bg-white/5 active:bg-white/10 transition-all duration-200 touch-manipulation"
+                    >
+                      Community (UOR)
+                    </a>
                     <Link
                       href="/contact"
                       onClick={() => setMobileMenuOpen(false)}

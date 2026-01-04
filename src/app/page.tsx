@@ -22,6 +22,14 @@ import {
   Activity,
   Github,
   MessageCircle,
+  Infinity,
+  Shield,
+  Rocket,
+  Building2,
+  TrendingUp,
+  Radio,
+  GitBranch,
+  CircuitBoard,
 } from "lucide-react";
 
 export default function Home() {
@@ -41,7 +49,7 @@ export default function Home() {
               </div>
               <div>
                 <p className="hero-subtitle mx-auto max-w-2xl text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground lg:mx-0 leading-relaxed px-2 sm:px-0">
-                  Accelerate ML, scientific, and computational workloads with <Math inline>O(1)</Math> geometry-powered virtual compute.
+                  Accelerate ML, scientific, and computational workloads with <Math inline>O(1)</Math> geometry-powered virtual compute. Own your data.
                 </p>
               </div>
               <div className="hero-cta flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 lg:justify-start px-2 sm:px-0">
@@ -70,17 +78,17 @@ export default function Home() {
                 </Button>
               </div>
               <div className="mx-auto mt-6 sm:mt-10 flex flex-row flex-nowrap items-center justify-center gap-0.5 sm:gap-1 lg:gap-2 xl:gap-4 lg:mx-0 lg:justify-start pt-4 sm:pt-2 border-t border-border/10 px-0.5 sm:px-1 overflow-hidden">
-                <div className="flex items-center gap-0.5 flex-shrink-0">
+                <div className="flex items-center gap-1 sm:gap-1.5 flex-shrink-0">
                   <CheckCircle2 className="h-2.5 w-2.5 sm:h-3 sm:w-3 lg:h-4 lg:w-4 xl:h-5 xl:w-5 2xl:h-6 2xl:w-6 flex-shrink-0 text-cyan" />
-                  <span className="text-[8px] sm:text-[9px] md:text-[10px] lg:text-xs xl:text-sm 2xl:text-base font-medium text-foreground whitespace-nowrap">Ultra-fast AI inference</span>
+                  <span className="text-[9px] sm:text-[10px] md:text-xs lg:text-sm xl:text-base 2xl:text-lg font-medium text-foreground whitespace-nowrap">Open-source & modular</span>
                 </div>
-                <div className="flex items-center gap-0.5 flex-shrink-0">
+                <div className="flex items-center gap-1 sm:gap-1.5 flex-shrink-0">
                   <CheckCircle2 className="h-2.5 w-2.5 sm:h-3 sm:w-3 lg:h-4 lg:w-4 xl:h-5 xl:w-5 2xl:h-6 2xl:w-6 flex-shrink-0 text-cyan" />
-                  <span className="text-[8px] sm:text-[9px] md:text-[10px] lg:text-xs xl:text-sm 2xl:text-base font-medium text-foreground whitespace-nowrap">Low cost & energy-efficient</span>
+                  <span className="text-[9px] sm:text-[10px] md:text-xs lg:text-sm xl:text-base 2xl:text-lg font-medium text-foreground whitespace-nowrap">Fast & energy-efficient</span>
                 </div>
-                <div className="flex items-center gap-0.5 flex-shrink-0">
+                <div className="flex items-center gap-1 sm:gap-1.5 flex-shrink-0">
                   <CheckCircle2 className="h-2.5 w-2.5 sm:h-3 sm:w-3 lg:h-4 lg:w-4 xl:h-5 xl:w-5 2xl:h-6 2xl:w-6 flex-shrink-0 text-cyan" />
-                  <span className="text-[8px] sm:text-[9px] md:text-[10px] lg:text-xs xl:text-sm 2xl:text-base font-medium text-foreground whitespace-nowrap">Secure & vendor-free</span>
+                  <span className="text-[9px] sm:text-[10px] md:text-xs lg:text-sm xl:text-base 2xl:text-lg font-medium text-foreground whitespace-nowrap">Edge-to-cloud AI</span>
                 </div>
               </div>
             </div>
@@ -104,39 +112,39 @@ export default function Home() {
       </section>
 
       {/* Compatible With Section */}
-      <section className="relative z-10 py-8 sm:py-12 border-b border-border/10 border-t border-border/10">
+      <section className="relative z-10 py-6 sm:py-8 lg:py-12 border-b border-border/10 border-t border-border/10">
         {/* Transparent overlay border for contrast */}
         <div className="absolute inset-0 border-x border-border/40 pointer-events-none" />
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-border/5 to-transparent pointer-events-none" />
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-14">
             {/* Backend-agnostic */}
             <div>
-              <div className="text-center mb-8">
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+              <div className="text-center mb-6 sm:mb-8">
+                <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-muted-foreground">
                   Backend-agnostic
                 </p>
               </div>
-              <div className="flex flex-wrap items-center justify-center gap-8 sm:gap-12 lg:gap-16">
-                <div className="flex flex-col items-center gap-2.5">
-                  <Cpu className="h-10 w-10 text-foreground" />
-                  <span className="text-sm font-medium text-foreground">CPU</span>
+              <div className="grid grid-cols-3 sm:flex sm:flex-wrap sm:items-center sm:justify-center gap-4 sm:gap-6 sm:gap-8 lg:gap-12">
+                <div className="flex flex-col items-center gap-2 sm:gap-2.5">
+                  <Cpu className="h-7 w-7 sm:h-9 sm:w-9 lg:h-10 lg:w-10 text-foreground" />
+                  <span className="text-[10px] sm:text-xs lg:text-sm font-medium text-foreground">CPU</span>
                 </div>
-                <div className="flex flex-col items-center gap-2.5">
-                  <Zap className="h-10 w-10 text-foreground" />
-                  <span className="text-sm font-medium text-foreground">GPU</span>
+                <div className="flex flex-col items-center gap-2 sm:gap-2.5">
+                  <Zap className="h-7 w-7 sm:h-9 sm:w-9 lg:h-10 lg:w-10 text-foreground" />
+                  <span className="text-[10px] sm:text-xs lg:text-sm font-medium text-foreground">GPU</span>
                 </div>
-                <div className="flex flex-col items-center gap-2.5">
-                  <Brain className="h-10 w-10 text-foreground" />
-                  <span className="text-sm font-medium text-foreground">TPU</span>
+                <div className="flex flex-col items-center gap-2 sm:gap-2.5">
+                  <Brain className="h-7 w-7 sm:h-9 sm:w-9 lg:h-10 lg:w-10 text-foreground" />
+                  <span className="text-[10px] sm:text-xs lg:text-sm font-medium text-foreground">TPU</span>
                 </div>
-                <div className="flex flex-col items-center gap-2.5">
-                  <Code2 className="h-10 w-10 text-foreground" />
-                  <span className="text-sm font-medium text-foreground">WASM</span>
+                <div className="flex flex-col items-center gap-2 sm:gap-2.5">
+                  <Code2 className="h-7 w-7 sm:h-9 sm:w-9 lg:h-10 lg:w-10 text-foreground" />
+                  <span className="text-[10px] sm:text-xs lg:text-sm font-medium text-foreground">WASM</span>
                 </div>
-                <div className="flex flex-col items-center gap-2.5">
-                  <Globe className="h-10 w-10 text-foreground" />
-                  <span className="text-sm font-medium text-foreground">WebGPU</span>
+                <div className="flex flex-col items-center gap-2 sm:gap-2.5">
+                  <Globe className="h-7 w-7 sm:h-9 sm:w-9 lg:h-10 lg:w-10 text-foreground" />
+                  <span className="text-[10px] sm:text-xs lg:text-sm font-medium text-foreground">WebGPU</span>
                 </div>
               </div>
             </div>
@@ -148,26 +156,26 @@ export default function Home() {
                   Compatible with
                 </p>
               </div>
-              <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 lg:gap-12">
-                <div className="flex flex-col items-center gap-2.5">
-                  <Atom className="h-10 w-10 text-foreground" />
-                  <span className="text-sm font-medium text-foreground">PyTorch</span>
+              <div className="grid grid-cols-3 sm:flex sm:flex-wrap sm:items-center sm:justify-center gap-4 sm:gap-6 sm:gap-8 lg:gap-12">
+                <div className="flex flex-col items-center gap-2 sm:gap-2.5">
+                  <Atom className="h-7 w-7 sm:h-9 sm:w-9 lg:h-10 lg:w-10 text-foreground" />
+                  <span className="text-[10px] sm:text-xs lg:text-sm font-medium text-foreground">PyTorch</span>
                 </div>
-                <div className="flex flex-col items-center gap-2.5">
-                  <Network className="h-10 w-10 text-foreground" />
-                  <span className="text-sm font-medium text-foreground">TensorFlow</span>
+                <div className="flex flex-col items-center gap-2 sm:gap-2.5">
+                  <Network className="h-7 w-7 sm:h-9 sm:w-9 lg:h-10 lg:w-10 text-foreground" />
+                  <span className="text-[10px] sm:text-xs lg:text-sm font-medium text-foreground">TensorFlow</span>
                 </div>
-                <div className="flex flex-col items-center gap-2.5">
-                  <Server className="h-10 w-10 text-foreground" />
-                  <span className="text-sm font-medium text-foreground">ONNX</span>
+                <div className="flex flex-col items-center gap-2 sm:gap-2.5">
+                  <Server className="h-7 w-7 sm:h-9 sm:w-9 lg:h-10 lg:w-10 text-foreground" />
+                  <span className="text-[10px] sm:text-xs lg:text-sm font-medium text-foreground">ONNX</span>
                 </div>
-                <div className="flex flex-col items-center gap-2.5">
-                  <Gauge className="h-10 w-10 text-foreground" />
-                  <span className="text-sm font-medium text-foreground">CUDA</span>
+                <div className="flex flex-col items-center gap-2 sm:gap-2.5">
+                  <Gauge className="h-7 w-7 sm:h-9 sm:w-9 lg:h-10 lg:w-10 text-foreground" />
+                  <span className="text-[10px] sm:text-xs lg:text-sm font-medium text-foreground">CUDA</span>
                 </div>
-                <div className="flex flex-col items-center gap-2.5">
-                  <Layers className="h-10 w-10 text-foreground" />
-                  <span className="text-sm font-medium text-foreground">ROCm</span>
+                <div className="flex flex-col items-center gap-2 sm:gap-2.5">
+                  <Infinity className="h-7 w-7 sm:h-9 sm:w-9 lg:h-10 lg:w-10 text-foreground" />
+                  <span className="text-[10px] sm:text-xs lg:text-sm font-medium text-foreground">+Other</span>
                 </div>
               </div>
             </div>
@@ -190,7 +198,7 @@ export default function Home() {
           <div className="space-y-8 text-lg leading-relaxed text-muted-foreground">
             <div className="space-y-6">
               <p className="text-base sm:text-lg leading-relaxed text-foreground">
-                Hologram is a high performance virtual infrastructure built on a new geometric computing paradigm. It enables instant, energy efficient, and secure general-purpose computation and AI inference across any device, from edge to cloud. Turning any device into a supercomputer through virtual acceleration.
+                Hologram is a high performance virtual infrastructure built on a new geometric computing paradigm. It enables ultra-fast, energy-efficient and secure general purpose computation (including AI inference) across any device from edge to cloud. Turning any device into a private supercomputer through virtual acceleration.
               </p>
               
               <p className="text-base sm:text-lg leading-relaxed text-foreground">
@@ -214,7 +222,7 @@ export default function Home() {
               <div className="grid md:grid-cols-2 gap-4 sm:gap-6 mt-6 sm:mt-8">
                 <div className="rounded-lg border border-border/20 bg-surface-dark/30 p-4 sm:p-6 hover:border-border/40 hover:bg-surface-dark/40 transition-all duration-200">
                   <div className="space-y-4">
-                    <h3 className="text-base sm:text-lg font-semibold text-foreground mb-2">
+                    <h3 className="text-base sm:text-lg font-semibold text-cyan mb-2">
                       1. Theoretical Breakthrough (Atlas)
                     </h3>
                     <p className="mb-3 text-muted-foreground">
@@ -232,7 +240,7 @@ export default function Home() {
 
                 <div className="rounded-lg border border-border/20 bg-surface-dark/30 p-6 hover:border-border/40 hover:bg-surface-dark/40 transition-all duration-200">
                   <div className="space-y-4">
-                    <h3 className="text-lg font-semibold text-foreground mb-2">
+                    <h3 className="text-lg font-semibold text-cyan mb-2">
                       2. Virtual High-Performance Hypervisor
                     </h3>
                     <p className="mb-3 text-muted-foreground">
@@ -278,14 +286,8 @@ export default function Home() {
                   </h3>
                 </div>
                 <p className="text-sm sm:text-base leading-relaxed text-muted-foreground">
-                  Deliver a <strong className="text-foreground font-semibold">broadband-like AI experience</strong> with <strong className="text-foreground font-semibold">zero runtime lag</strong>, enabling smooth, responsive, real-time applications.
+                  Deliver a streaming AI experience with zero runtime lag, enabling smooth, responsive, real-time applications.
                 </p>
-                <div className="pt-3 sm:pt-4 border-t border-border/20">
-                  <ul className="space-y-1.5 sm:space-y-2 text-sm sm:text-base text-cyan">
-                    <li>• <strong>AI research labs</strong></li>
-                    <li>• <strong>Edge devices & IoT</strong></li>
-                  </ul>
-                </div>
               </div>
 
               {/* Low cost & energy-efficient */}
@@ -295,38 +297,79 @@ export default function Home() {
                     <DollarSign className="h-5 w-5 sm:h-6 sm:w-6 text-white" strokeWidth={1.5} />
                   </div>
                   <h3 className="text-lg sm:text-xl font-semibold text-foreground">
-                    Low cost & energy-efficient
+                    Cost & energy-efficient
                   </h3>
                 </div>
                 <p className="text-sm sm:text-base leading-relaxed text-muted-foreground">
-                  Run advanced AI on <strong className="text-foreground font-semibold">commodity hardware</strong>, cutting compute and energy costs to <strong className="text-foreground font-semibold">boost profit margins</strong>.
+                  Run advanced AI on commodity hardware, cutting compute and energy costs to boost profit margins.
                 </p>
-                <div className="pt-3 sm:pt-4 border-t border-border/20">
-                  <ul className="space-y-1.5 sm:space-y-2 text-sm sm:text-base text-cyan">
-                    <li>• AI startups</li>
-                    <li>• Data centres</li>
-                  </ul>
-                </div>
               </div>
 
-              {/* Secure & vendor-free */}
+              {/* Edge-to-cloud */}
               <div className="rounded-lg border border-border/20 bg-surface-dark/30 p-4 sm:p-6 hover:border-border/40 hover:bg-surface-dark/40 transition-all duration-200 space-y-3 sm:space-y-4">
                 <div className="flex items-center gap-3">
                   <div className="flex h-12 w-12 items-center justify-center rounded-lg border border-border/30">
                     <Lock className="h-6 w-6 text-white" strokeWidth={1.5} />
                   </div>
                   <h3 className="text-xl font-semibold text-foreground">
-                    Secure & vendor-free
+                    Edge-to-cloud
                   </h3>
                 </div>
                 <p className="text-base leading-relaxed text-muted-foreground">
-                  Hybrid-cloud AI runtime delivering <strong className="text-foreground font-semibold">secure, virtual private infrastructure</strong> with <strong className="text-foreground font-semibold">full data control</strong>.
+                  Hybrid-cloud AI runtime delivering secure, virtual private infrastructure with full data control.
                 </p>
-                <div className="pt-4 border-t border-border/20">
-                  <ul className="space-y-2 text-base text-cyan">
-                    <li>• Regulated enterprise</li>
-                    <li>• Government & Defence</li>
-                  </ul>
+              </div>
+            </div>
+
+            {/* Hologram applications */}
+            <div className="mt-8 sm:mt-10 lg:mt-12 pt-8 sm:pt-10 lg:pt-12 border-t border-border/10">
+              <div className="text-center mb-8 sm:mb-10">
+                <h3 className="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">
+                  Use cases
+                </h3>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 lg:gap-6 max-w-6xl mx-auto">
+                <div className="text-center space-y-3">
+                  <div className="flex justify-center">
+                    <Brain className="h-8 w-8 sm:h-10 sm:w-10 text-cyan" />
+                  </div>
+                  <div className="text-lg sm:text-xl font-bold text-foreground tracking-tight">AI research labs</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground leading-relaxed">Accelerated scientific research</div>
+                </div>
+                <div className="text-center space-y-3">
+                  <div className="flex justify-center">
+                    <TrendingUp className="h-8 w-8 sm:h-10 sm:w-10 text-cyan" />
+                  </div>
+                  <div className="text-lg sm:text-xl font-bold text-foreground tracking-tight">AI startups</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground leading-relaxed">Cost-effective AI compute</div>
+                </div>
+                <div className="text-center space-y-3">
+                  <div className="flex justify-center">
+                    <Building2 className="h-8 w-8 sm:h-10 sm:w-10 text-cyan" />
+                  </div>
+                  <div className="text-lg sm:text-xl font-bold text-foreground tracking-tight">Regulated enterprise</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground leading-relaxed">Compliant private infrastructure</div>
+                </div>
+                <div className="text-center space-y-3">
+                  <div className="flex justify-center">
+                    <Cpu className="h-8 w-8 sm:h-10 sm:w-10 text-cyan" />
+                  </div>
+                  <div className="text-lg sm:text-xl font-bold text-foreground tracking-tight">Edge devices & IoT</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground leading-relaxed">On-device AI processing</div>
+                </div>
+                <div className="text-center space-y-3">
+                  <div className="flex justify-center">
+                    <Server className="h-8 w-8 sm:h-10 sm:w-10 text-cyan" />
+                  </div>
+                  <div className="text-lg sm:text-xl font-bold text-foreground tracking-tight">Data centres</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground leading-relaxed">Energy-efficient compute</div>
+                </div>
+                <div className="text-center space-y-3">
+                  <div className="flex justify-center">
+                    <Shield className="h-8 w-8 sm:h-10 sm:w-10 text-cyan" />
+                  </div>
+                  <div className="text-lg sm:text-xl font-bold text-foreground tracking-tight">Government & Defence</div>
+                  <div className="text-xs sm:text-sm text-muted-foreground leading-relaxed">Quantum-resistant encryption</div>
                 </div>
               </div>
             </div>
@@ -446,6 +489,7 @@ export default function Home() {
                       <p className="text-base text-muted-foreground">SIMD128 in linear memory for browsers/Node.js</p>
                     </div>
                   </div>
+                  <p className="text-base text-foreground text-center mt-2">And more+</p>
                 </div>
 
                 <p className="text-base leading-relaxed text-muted-foreground pt-2 border-t border-border/10">
@@ -461,7 +505,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-foreground">
-                      3. Execute in Constant Time
+                      3. Execute in O(1) Time
                     </h3>
                   </div>
                 </div>
@@ -511,58 +555,37 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Deployment model */}
+            {/* Comparison with */}
             <div className="mt-12 pt-8 border-t border-border/20">
               <h3 className="text-2xl font-semibold text-foreground mb-6 text-center">
-                Deployment model
+                Comparison with
               </h3>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
-                <div className="flex items-start gap-3">
-                  <div className="flex h-6 w-6 items-center justify-center rounded-full bg-cyan/10 border border-cyan/20 mt-0.5 flex-shrink-0">
-                    <div className="h-2 w-2 rounded-full bg-cyan" />
+              <div className="grid md:grid-cols-3 gap-4 sm:gap-6 max-w-5xl mx-auto">
+                <div className="rounded-lg border border-border/20 bg-surface-dark/30 p-4 sm:p-6 hover:border-border/40 hover:bg-surface-dark/40 transition-all duration-200">
+                  <div className="flex items-center gap-3 mb-4">
+                    <Radio className="h-6 w-6 sm:h-8 sm:w-8 text-cyan" />
+                    <h4 className="text-base sm:text-lg font-semibold text-cyan">Analog Circuits</h4>
                   </div>
-                  <p className="text-base text-muted-foreground">
-                    Open-source library
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                    Computation flows through fixed geometric mappings rather than stepwise control flow, while remaining fully digital, deterministic, and noise-free.
                   </p>
                 </div>
-                <div className="flex items-start gap-3">
-                  <div className="flex h-6 w-6 items-center justify-center rounded-full bg-cyan/10 border border-cyan/20 mt-0.5 flex-shrink-0">
-                    <div className="h-2 w-2 rounded-full bg-cyan" />
+                <div className="rounded-lg border border-border/20 bg-surface-dark/30 p-4 sm:p-6 hover:border-border/40 hover:bg-surface-dark/40 transition-all duration-200">
+                  <div className="flex items-center gap-3 mb-4">
+                    <GitBranch className="h-6 w-6 sm:h-8 sm:w-8 text-cyan" />
+                    <h4 className="text-base sm:text-lg font-semibold text-cyan">Quantum Circuits</h4>
                   </div>
-                  <p className="text-base text-muted-foreground">
-                    Runs inside your application process
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                    Multiple operations are mathematically fused into a single executable structure, achieving superposition-like efficiency without probabilistic behavior or specialized hardware.
                   </p>
                 </div>
-                <div className="flex items-start gap-3">
-                  <div className="flex h-6 w-6 items-center justify-center rounded-full bg-cyan/10 border border-cyan/20 mt-0.5 flex-shrink-0">
-                    <div className="h-2 w-2 rounded-full bg-cyan" />
+                <div className="rounded-lg border border-border/20 bg-surface-dark/30 p-4 sm:p-6 hover:border-border/40 hover:bg-surface-dark/40 transition-all duration-200">
+                  <div className="flex items-center gap-3 mb-4">
+                    <CircuitBoard className="h-6 w-6 sm:h-8 sm:w-8 text-cyan" />
+                    <h4 className="text-base sm:text-lg font-semibold text-cyan">FPGA Circuits</h4>
                   </div>
-                  <p className="text-base text-muted-foreground">
-                    No external runtime or services
-                  </p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="flex h-6 w-6 items-center justify-center rounded-full bg-cyan/10 border border-cyan/20 mt-0.5 flex-shrink-0">
-                    <div className="h-2 w-2 rounded-full bg-cyan" />
-                  </div>
-                  <p className="text-base text-muted-foreground">
-                    No special hardware required
-                  </p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="flex h-6 w-6 items-center justify-center rounded-full bg-cyan/10 border border-cyan/20 mt-0.5 flex-shrink-0">
-                    <div className="h-2 w-2 rounded-full bg-cyan" />
-                  </div>
-                  <p className="text-base text-muted-foreground">
-                    GPU acceleration is optional
-                  </p>
-                </div>
-                <div className="flex items-start gap-3 md:col-span-2 lg:col-span-1">
-                  <div className="flex h-6 w-6 items-center justify-center rounded-full bg-cyan/10 border border-cyan/20 mt-0.5 flex-shrink-0">
-                    <div className="h-2 w-2 rounded-full bg-cyan" />
-                  </div>
-                  <p className="text-base text-muted-foreground">
-                    Works in Rust, Python (FFI), Web, mobile, and server environments
+                  <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+                    Execution uses a compile-time-fixed topology with predictable, constant-time behavior, delivered as software rather than reconfigurable silicon.
                   </p>
                 </div>
               </div>

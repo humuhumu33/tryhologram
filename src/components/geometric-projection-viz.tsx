@@ -126,20 +126,22 @@ export function GeometricProjectionViz() {
             <g transform="translate(850, 140)">
               <rect x="-50" y="-30" width="100" height="60" rx="2" fill="#111827" stroke="#10b981" strokeWidth="2" />
               <g transform="translate(-35, -15)">
-                {Array.from({ length: 8 }).map((_, i) =>
-                  Array.from({ length: 4 }).map((_, j) => (
-                    <rect
-                      key={`${i}-${j}`}
-                      x={i * 8}
-                      y={j * 8}
-                      width="6"
-                      height="6"
-                      fill={i === 1 && j === 1 ? "#10b981" : "#374151"}
-                      stroke="#1f2937"
-                      strokeWidth="0.5"
-                    />
-                  ))
-                )}
+                {Array.from({ length: 8 }).map((_, i) => (
+                  <g key={`row-${i}`}>
+                    {Array.from({ length: 4 }).map((_, j) => (
+                      <rect
+                        key={`${i}-${j}`}
+                        x={i * 8}
+                        y={j * 8}
+                        width="6"
+                        height="6"
+                        fill={i === 1 && j === 1 ? "#10b981" : "#374151"}
+                        stroke="#1f2937"
+                        strokeWidth="0.5"
+                      />
+                    ))}
+                  </g>
+                ))}
               </g>
             </g>
 
@@ -193,6 +195,11 @@ export function GeometricProjectionViz() {
     </div>
   );
 }
+
+
+
+
+
 
 
 

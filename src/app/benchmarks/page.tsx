@@ -148,22 +148,21 @@ export default function BenchmarksPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section - Focused and Impactful */}
-      <Section className="py-20 sm:py-24 lg:py-32 border-b border-border/10">
+      <Section className="py-12 sm:py-16 lg:py-20 border-b border-border/10">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-foreground">
+          <div className="text-center mb-10 sm:mb-12">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-4 sm:mb-6 text-foreground">
               Hologram Performance<br />
-              Benchmarks
+              <span className="block mt-2 sm:mt-3">Benchmarks</span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Measured execution times across {data.benchmark_count} operations. 
-              All data is publicly verifiable and reproducible.
+              Measured execution times across 55 live operations. All data is publicly verifiable and reproducible.
             </p>
           </div>
 
           {/* Key Metric - Single Focus */}
-          <div className="max-w-3xl mx-auto mb-16">
-            <Card className="border-2 border-border/30 bg-surface-dark/40 relative overflow-hidden">
+          <div className="max-w-3xl mx-auto mb-10 sm:mb-12">
+            <Card className="border-2 border-purple-500/40 bg-surface-dark/40 relative overflow-hidden shadow-[0_0_30px_rgba(168,85,247,0.4)] hover:border-purple-500/40 hover:shadow-[0_0_30px_rgba(168,85,247,0.4)] transition-none">
               {/* Subtle speed indicator - subtle gradient border */}
               <div className="absolute inset-0 bg-gradient-to-br from-cyan/5 via-transparent to-transparent pointer-events-none" />
               <CardContent className="p-10 sm:p-16 relative">
@@ -298,8 +297,8 @@ export default function BenchmarksPage() {
       {/* Performance Overview - Data-Focused */}
       <Section className="border-b border-border/10">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold tracking-tight mb-3 text-foreground">
+          <div className="mb-8 sm:mb-10">
+            <h2 className="text-3xl font-bold tracking-tight mb-3 text-cyan">
               Performance by Category
             </h2>
             <p className="text-muted-foreground">
@@ -307,10 +306,10 @@ export default function BenchmarksPage() {
             </p>
           </div>
           
-          <div className="space-y-20">
+          <div className="space-y-12 sm:space-y-14">
             {/* Compiler Operations */}
             <div>
-              <div className="mb-8">
+              <div className="mb-6">
                 <div className="flex items-center gap-3 mb-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded border border-border/20 bg-surface-dark/30">
                     <Workflow className="w-5 h-5 text-foreground" />
@@ -322,7 +321,7 @@ export default function BenchmarksPage() {
                     </p>
                   </div>
                 </div>
-                <div className="mt-6 pt-6 border-t-2 border-border/20">
+                <div className="mt-4 pt-4 border-t-2 border-border/20">
                   <div className="flex items-end gap-8 sm:gap-12">
                     <div>
                       <div className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2">
@@ -410,8 +409,8 @@ export default function BenchmarksPage() {
       {/* Category Overview - Minimal Cards */}
       <Section className="bg-surface-dark/10 border-b border-border/10">
         <div className="max-w-6xl mx-auto">
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold tracking-tight mb-3 text-foreground">
+          <div className="mb-8 sm:mb-10">
+            <h2 className="text-3xl font-bold tracking-tight mb-3 text-cyan">
               All Categories
             </h2>
             <p className="text-muted-foreground">
@@ -471,8 +470,8 @@ export default function BenchmarksPage() {
       {/* Detailed Benchmarks */}
       <Section>
         <div className="max-w-6xl mx-auto">
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold tracking-tight mb-3 text-foreground">
+          <div className="mb-8 sm:mb-10">
+            <h2 className="text-3xl font-bold tracking-tight mb-3 text-cyan">
               Detailed Results
             </h2>
             <p className="text-muted-foreground">
@@ -497,7 +496,7 @@ export default function BenchmarksPage() {
 
       {/* CTA Section - Minimal */}
       <Section className="bg-surface-dark/10 border-t border-border/10">
-        <div className="max-w-3xl mx-auto text-center py-16">
+        <div className="max-w-3xl mx-auto text-center py-10 sm:py-12">
           <h2 className="text-2xl font-semibold mb-3 text-foreground">
             Verify Independently
           </h2>

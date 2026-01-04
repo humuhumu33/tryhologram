@@ -127,31 +127,6 @@ export default function ResearchPage() {
             </div>
           </div>
 
-          {/* Conclusion */}
-          <div className="mb-16 space-y-8 pt-8 border-t border-border/20">
-            <h2 className="text-2xl font-bold tracking-tight mb-6">
-              Conclusion
-            </h2>
-            
-            <div className="space-y-6 text-base leading-relaxed text-foreground">
-              <p>
-                Atlas suggests that information is lawful, not arbitrary. It has intrinsic mathematical structure, occupies a fixed geometric space, and obeys conservation principles that constrain how it can be represented and transformed. These properties are observed, not imposed.
-              </p>
-              
-              <p>
-                Aligning computation with this structure offers a path to simpler, more reliable, and more interoperable systems, where correctness follows from mathematics rather than enforcement.
-              </p>
-              
-              <p>
-                This page is an introduction. The UOR Foundation is developing Atlas as an open research effort and invites examination, replication, and contribution. Progress depends on independent validation and collaboration.
-              </p>
-              
-              <p>
-                If information has intrinsic topological structure, then Atlas is its early map.
-              </p>
-            </div>
-          </div>
-
           {/* Read Whitepaper Button */}
           <div className="mt-12 flex items-center justify-center">
             <Button asChild>
